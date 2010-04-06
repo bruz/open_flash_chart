@@ -3,7 +3,7 @@ module OpenFlashChart
   class AreaHollow < AreaBase
     def initialize args={}
       super
-      @type = "area_hollow"      
+      set_default_dot_style HollowDot.new
     end
   end
 

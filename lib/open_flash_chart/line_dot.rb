@@ -3,7 +3,7 @@ module OpenFlashChart
   class LineDot < LineBase
     def initialize args={}
       super
-      @type = "line_dot"
+      set_default_dot_style SolidDot.new
     end
   end
 

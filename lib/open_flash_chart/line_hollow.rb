@@ -3,7 +3,7 @@ module OpenFlashChart
   class LineHollow < LineBase
     def initialize args={}
       super
-      @type = "line_hollow"
+      set_default_dot_style HollowDot.new
     end
   end
 
